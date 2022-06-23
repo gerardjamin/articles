@@ -1,0 +1,504 @@
+Array
+(
+    [r] => articles/index
+)
+
+correspond a request->queryParams
+
+
+
+
+correspond a l'objet request
+
+yii\web\Request Object
+(
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_eventWildcards:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => 
+    [_scriptFile:yii\base\Request:private] => 
+    [_isConsoleRequest:yii\base\Request:private] => 
+    [enableCsrfValidation] => 1
+    [csrfParam] => _csrf
+    [csrfCookie] => Array
+        (
+            [httpOnly] => 1
+        )
+
+    [enableCsrfCookie] => 1
+    [enableCookieValidation] => 1
+    [cookieValidationKey] => 7NCJAke1Vo-V_oUcJRPJig0laZOJQT5z
+    [methodParam] => _method
+    [parsers] => Array
+        (
+        )
+
+    [trustedHosts] => Array
+        (
+        )
+
+    [secureHeaders] => Array
+        (
+            [0] => X-Forwarded-For
+            [1] => X-Forwarded-Host
+            [2] => X-Forwarded-Proto
+            [3] => Front-End-Https
+            [4] => X-Rewrite-Url
+            [5] => X-Original-Host
+        )
+
+    [ipHeaders] => Array
+        (
+            [0] => X-Forwarded-For
+        )
+
+    [secureProtocolHeaders] => Array
+        (
+            [X-Forwarded-Proto] => Array
+                (
+                    [0] => https
+                )
+
+            [Front-End-Https] => Array
+                (
+                    [0] => on
+                )
+
+        )
+
+    [_cookies:yii\web\Request:private] => yii\web\CookieCollection Object
+        (
+            [readOnly] => 1
+            [_cookies:yii\web\CookieCollection:private] => Array
+                (
+                    [_csrf] => yii\web\Cookie Object
+                        (
+                            [name] => _csrf
+                            [value] => 2jLRIzkT4teK1w0hiWH1mPSZd20eTkVz
+                            [domain] => 
+                            [expire] => 
+                            [path] => /
+                            [secure] => 
+                            [httpOnly] => 1
+                            [sameSite] => Lax
+                        )
+
+                )
+
+        )
+
+    [_headers:yii\web\Request:private] => yii\web\HeaderCollection Object
+        (
+            [_headers:yii\web\HeaderCollection:private] => Array
+                (
+                    [host] => Array
+                        (
+                            [0] => localhost:8080
+                        )
+
+                    [connection] => Array
+                        (
+                            [0] => keep-alive
+                        )
+
+                    [cache-control] => Array
+                        (
+                            [0] => max-age=0
+                        )
+
+                    [sec-ch-ua] => Array
+                        (
+                            [0] => " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"
+                        )
+
+                    [sec-ch-ua-mobile] => Array
+                        (
+                            [0] => ?0
+                        )
+
+                    [sec-ch-ua-platform] => Array
+                        (
+                            [0] => "Windows"
+                        )
+
+                    [upgrade-insecure-requests] => Array
+                        (
+                            [0] => 1
+                        )
+
+                    [user-agent] => Array
+                        (
+                            [0] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+                        )
+
+                    [accept] => Array
+                        (
+                            [0] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+                        )
+
+                    [sec-fetch-site] => Array
+                        (
+                            [0] => none
+                        )
+
+                    [sec-fetch-mode] => Array
+                        (
+                            [0] => navigate
+                        )
+
+                    [sec-fetch-user] => Array
+                        (
+                            [0] => ?1
+                        )
+
+                    [sec-fetch-dest] => Array
+                        (
+                            [0] => document
+                        )
+
+                    [accept-encoding] => Array
+                        (
+                            [0] => gzip, deflate, br
+                        )
+
+                    [accept-language] => Array
+                        (
+                            [0] => fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+                        )
+
+                    [cookie] => Array
+                        (
+                            [0] => _csrf=48375cb61db8bb362b85a12f912bb17f65808eb1e5a50e1a17fca0ca9a51a2bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%222jLRIzkT4teK1w0hiWH1mPSZd20eTkVz%22%3B%7D; PHPSESSID=je76jp83jrelkuhphi35hr3ug8
+                        )
+
+                )
+
+            [_originalHeaderNames:yii\web\HeaderCollection:private] => Array
+                (
+                    [host] => Host
+                    [connection] => Connection
+                    [cache-control] => Cache-Control
+                    [sec-ch-ua] => sec-ch-ua
+                    [sec-ch-ua-mobile] => sec-ch-ua-mobile
+                    [sec-ch-ua-platform] => sec-ch-ua-platform
+                    [upgrade-insecure-requests] => Upgrade-Insecure-Requests
+                    [user-agent] => User-Agent
+                    [accept] => Accept
+                    [sec-fetch-site] => Sec-Fetch-Site
+                    [sec-fetch-mode] => Sec-Fetch-Mode
+                    [sec-fetch-user] => Sec-Fetch-User
+                    [sec-fetch-dest] => Sec-Fetch-Dest
+                    [accept-encoding] => Accept-Encoding
+                    [accept-language] => Accept-Language
+                    [cookie] => Cookie
+                )
+
+        )
+
+    [_rawBody:yii\web\Request:private] => 
+    [_bodyParams:yii\web\Request:private] => 
+
+********************************************************************************************************************************************************************
+    [_queryParams:yii\web\Request:private] => 
+*******************************************************************************************************************************************************************
+
+
+    [_hostInfo:yii\web\Request:private] => 
+    [_hostName:yii\web\Request:private] => 
+    [_baseUrl:yii\web\Request:private] => 
+    [_scriptUrl:yii\web\Request:private] => /index.php
+    [_scriptFile:yii\web\Request:private] => 
+    [_pathInfo:yii\web\Request:private] => 
+    [_url:yii\web\Request:private] => 
+    [_port:yii\web\Request:private] => 
+    [_securePort:yii\web\Request:private] => 
+    [_contentTypes:yii\web\Request:private] => 
+    [_languages:yii\web\Request:private] => 
+    [_csrfToken:yii\web\Request:private] => 
+    [_secureForwardedHeaderParts:yii\web\Request:private] => 
+
+
+
+***************************************************************************************************************************
+
+yii\db\ActiveQuery Object
+(
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_eventWildcards:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => Array
+        (
+        )
+
+    [select] => 
+    [selectOption] => 
+    [distinct] => 
+    [from] => 
+    [groupBy] => 
+    [join] => 
+    [having] => 
+    [union] => 
+    [withQueries] => 
+    [params] => Array
+        (
+        )
+
+    [queryCacheDuration] => 
+    [queryCacheDependency] => 
+    [where] => 
+    [limit] => 
+    [offset] => 
+    [orderBy] => 
+    [indexBy] => 
+    [emulateExecution] => 
+    [sql] => 
+    [on] => 
+    [joinWith] => 
+    [modelClass] => app\models\Articles
+    [with] => 
+    [asArray] => 
+    [multiple] => 
+    [primaryModel] => 
+    [link] => 
+    [via] => 
+    [inverseOf] => 
+    [viaMap:yii\db\ActiveQuery:private] => 
+)
+
+
+******************************************************return dataProvider*********************************************
+yii\data\ActiveDataProvider Object
+(
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_eventWildcards:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => 
+    [id] => 
+    [_sort:yii\data\BaseDataProvider:private] => 
+    [_pagination:yii\data\BaseDataProvider:private] => 
+    [_keys:yii\data\BaseDataProvider:private] => 
+    [_models:yii\data\BaseDataProvider:private] => 
+    [_totalCount:yii\data\BaseDataProvider:private] => 
+
+
+    [query] => yii\db\ActiveQuery Object
+        (
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_eventWildcards:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+            [select] => 
+            [selectOption] => 
+            [distinct] => 
+            [from] => 
+            [groupBy] => 
+            [join] => 
+            [having] => 
+            [union] => 
+            [withQueries] => 
+            [params] => Array
+                (
+                )
+
+            [queryCacheDuration] => 
+            [queryCacheDependency] => 
+            [where] => 
+            [limit] => 
+            [offset] => 
+            [orderBy] => 
+            [indexBy] => 
+            [emulateExecution] => 
+            [sql] => 
+            [on] => 
+            [joinWith] => 
+            [modelClass] => app\models\Articles
+            [with] => 
+            [asArray] => 
+            [multiple] => 
+            [primaryModel] => 
+            [link] => 
+            [via] => 
+            [inverseOf] => 
+            [viaMap:yii\db\ActiveQuery:private] => 
+        )
+
+    [key] => 
+    [db] => 
+
+********************************************query***********************************************
+
+Array
+(
+    [r] => articles/index
+)
+
+*************************************** $THIS(instance courante) **************************
+
+app\models\ArticlesSearch Object
+(
+    [_events:yii\base\Component:private] => Array
+        (
+        )
+
+    [_eventWildcards:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => Array
+        (
+        )
+
+    [_errors:yii\base\Model:private] => Array
+        (
+        )
+
+    [_validators:yii\base\Model:private] => ArrayObject Object
+        (
+            [storage:ArrayObject:private] => Array
+                (
+                    [0] => yii\validators\NumberValidator Object
+                        (
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                            [attributes] => Array
+                                (
+                                    [0] => id_article
+                                    [1] => fk_author
+                                )
+
+                            [message] => {attribute} must be an integer.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [allowArray] => 
+                            [integerOnly] => 1
+                            [max] => 
+                            [min] => 
+                            [tooBig] => 
+                            [tooSmall] => 
+                            [integerPattern] => /^[+-]?\d+$/
+                            [numberPattern] => /^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/
+                        )
+
+                    [1] => yii\validators\SafeValidator Object
+                        (
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                            [attributes] => Array
+                                (
+                                    [0] => lastEdited
+                                    [1] => published
+                                    [2] => title
+                                    [3] => description
+                                    [4] => content
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                        )
+
+                )
+
+        )
+
+    [_scenario:yii\base\Model:private] => default
+    [_attributes:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_oldAttributes:yii\db\BaseActiveRecord:private] => 
+    [_related:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_relationsDependencies:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+)
+
+*************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

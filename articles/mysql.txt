@@ -1,0 +1,187 @@
+Microsoft Windows [version 10.0.19044.1766]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\gerar>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 452
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases
+    -> ;
++------------------------+
+| Database               |
++------------------------+
+| bdd_mvc                |
+| bdd_mvc_comment        |
+| dwwm                   |
+| ecole                  |
+| empscephp              |
+| exemple                |
+| exogerard              |
+| gestionvelocorrection  |
+| information_schema     |
+| jointure               |
+| mvc_v0                 |
+| mysql                  |
+| password               |
+| performance_schema     |
+| phpmyadmin             |
+| test                   |
+| tiktak                 |
+| tiktok                 |
+| velo                   |
+| yii2basic              |
+| yii_database_compagny  |
+| yii_framework_database |
++------------------------+
+22 rows in set (0.001 sec)
+
+MariaDB [(none)]> create  database yii_article;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use yii_article;
+Database changed
+MariaDB [yii_article]> create table Authors(
+    -> id_authors int primary key not null,
+    -> name varchar(60),
+    -> twiter varchar(45),
+    -> linkedin varchar(100),
+    -> gogglePlus varchar(100),
+    -> gitHub varchar(100),
+    -> about text );
+Query OK, 0 rows affected (0.027 sec)
+
+MariaDB [yii_article]> create table Articles(
+    -> id_article int primary key not null,
+    -> lastEdited datetime,
+    -> published date,
+    -> title varchar(250),
+    -> content mediumtext(100),
+    -> content mediumtext(100),Ctrl-C -- exit!
+Bye
+
+C:\Users\gerar>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 455
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use yii_articles
+ERROR 1049 (42000): Unknown database 'yii_articles'
+MariaDB [(none)]> use yii_article
+Database changed
+MariaDB [yii_article]> show tables;
++-----------------------+
+| Tables_in_yii_article |
++-----------------------+
+| authors               |
++-----------------------+
+1 row in set (0.001 sec)
+
+MariaDB [yii_article]> describe authors;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id_authors | int(11)      | NO   | PRI | NULL    |       |
+| name       | varchar(60)  | YES  |     | NULL    |       |
+| twiter     | varchar(45)  | YES  |     | NULL    |       |
+| linkedin   | varchar(100) | YES  |     | NULL    |       |
+| gogglePlus | varchar(100) | YES  |     | NULL    |       |
+| gitHub     | varchar(100) | YES  |     | NULL    |       |
+| about      | text         | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+7 rows in set (0.008 sec)
+
+MariaDB [yii_article]> create table articles(
+    -> id_article int primary key not null,
+    -> lastEdited datetime,
+    -> published date,
+    -> title varchar(250),
+    -> description text,
+    -> content mediumtext,
+    -> fk_author int not null);
+Query OK, 0 rows affected (0.028 sec)
+
+MariaDB [yii_article]> describe articles;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id_article  | int(11)      | NO   | PRI | NULL    |       |
+| lastEdited  | datetime     | YES  |     | NULL    |       |
+| published   | date         | YES  |     | NULL    |       |
+| title       | varchar(250) | YES  |     | NULL    |       |
+| description | text         | YES  |     | NULL    |       |
+| content     | mediumtext   | YES  |     | NULL    |       |
+| fk_author   | int(11)      | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+7 rows in set (0.009 sec)
+
+MariaDB [yii_article]>
+
+MariaDB [yii_article]> show tables;
++-----------------------+
+| Tables_in_yii_article |
++-----------------------+
+| articles              |
+| authors               |
++-----------------------+
+2 rows in set (0.001 sec)
+
+MariaDB [yii_article]> create table articleTag (
+    -> id_articleTag int primary key not null,
+    -> fk_article int not null,
+    -> fk_tag int not null);
+Query OK, 0 rows affected (0.025 sec)
+
+MariaDB [yii_article]> create table tag(
+    -> id_tag int primary key not null,
+    -> tag varchar(20) );
+Query OK, 0 rows affected (0.026 sec)
+
+MariaDB [yii_article]> describe articles;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id_article  | int(11)      | NO   | PRI | NULL    | auto_increment |
+| lastEdited  | datetime     | YES  |     | NULL    |                |
+| published   | date         | YES  |     | NULL    |                |
+| title       | varchar(250) | YES  |     | NULL    |                |
+| description | text         | YES  |     | NULL    |                |
+| content     | mediumtext   | YES  |     | NULL    |                |
+| fk_author   | int(11)      | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.018 sec)
+
+MariaDB [yii_article]> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [yii_article]> show tables;
++-----------------------+
+| Tables_in_yii_article |
++-----------------------+
+| articles              |
+| articletag            |
+| authors               |
+| tag                   |
++-----------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [yii_article]> describe articletag;
++---------------+---------+------+-----+---------+----------------+
+| Field         | Type    | Null | Key | Default | Extra          |
++---------------+---------+------+-----+---------+----------------+
+| id_articleTag | int(11) | NO   | PRI | NULL    | auto_increment |
+| fk_article    | int(11) | NO   | MUL | NULL    |                |
+| fk_tag        | int(11) | NO   | MUL | NULL    |                |
++---------------+---------+------+-----+---------+----------------+
+3 rows in set (0.018 sec)
+
+MariaDB [yii_article]>
+
+
